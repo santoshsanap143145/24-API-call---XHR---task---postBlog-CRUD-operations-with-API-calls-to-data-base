@@ -198,7 +198,7 @@ const updateOnClick = () => {
       loader.classList.add("d-none");
       snackBar("Post is Updated Successfully !!!", "success");
     } else {
-      cl(xhr.response, "error");
+      cl(xhr.response);
     }
   };
 };
