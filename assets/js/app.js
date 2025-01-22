@@ -193,8 +193,8 @@ const updateOnClick = () => {
       card[0].innerHTML = `<h3 class="m-0">${updatedPostObj.title}</h3>`;
       card[1].innerHTML = `<p class="m-0">${updatedPostObj.body}</p>`;
       postForm.reset();
-      submitBtn.classList.add("d-none");
-      updateBtn.classList.remove("d-none");
+      submitBtn.classList.remove("d-none");
+      updateBtn.classList.add("d-none");
       loader.classList.add("d-none");
       snackBar("Post is Updated Successfully !!!", "success");
     } else {
